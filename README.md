@@ -21,7 +21,7 @@ O login e o cadastro são realizados na página inicial do site, seguindo a prá
 
 Para o desenvolvimento do projeto, utilizei React para o front-end e Node.js para o back-end. O sistema é composto por um total de 12 arquivos, sendo que cada um desempenha uma função específica dentro da aplicação.
 
-**Dica**: Para iniciar o projeto em seu computador, abra o arquivo app.js no terminal (cmd) e execute o comando npm start. Isso iniciará a aplicação e permitirá que você comece a utilizá-la.
+**Dica**: Para iniciar o projeto em seu computador, abra o arquivo app.js no terminal (cmd) e execute o comando npm start, o index.js no backe-end node index.js. Isso iniciará a aplicação e permitirá que você comece a utilizá-la. Com isso, você poderá acessar a aplicação em seu navegador, utilizando o frontend na porta 3000 e o backend na porta 3001.
 
 - **Start do documento**
 > Para garantir o funcionamento completo do projeto, é necessário iniciar tanto o front-end quanto o back-end. Para o front-end, siga as instruções anteriores e execute o comando start no diretório correspondente. Da mesma forma, inicie o back-end para possibilitar a realização de alterações nos gerenciamentos de tarefas. Certifique-se de que ambos os serviços estejam em execução para garantir o funcionamento adequado da aplicação.

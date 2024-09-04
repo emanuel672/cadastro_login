@@ -21,91 +21,66 @@ O login e o cadastro são realizados na página inicial do site, seguindo a prá
 
 Para o desenvolvimento do projeto, utilizei React para o front-end e Node.js para o back-end. O sistema é composto por um total de 12 arquivos, sendo que cada um desempenha uma função específica dentro da aplicação.
 
-**Tip**: use **[docusaurus.new](https://docusaurus.new)** to test Docusaurus immediately in a playground.
+**Dica**: Para iniciar o projeto em seu computador, abra o arquivo app.js no terminal (cmd) e execute o comando npm start. Isso iniciará a aplicação e permitirá que você comece a utilizá-la.
 
-- **Simple to Start**
+- **Start do documento**
+> Para garantir o funcionamento completo do projeto, é necessário iniciar tanto o front-end quanto o back-end. Para o front-end, siga as instruções anteriores e execute o comando start no diretório correspondente. Da mesma forma, inicie o back-end para possibilitar a realização de alterações nos gerenciamentos de tarefas. Certifique-se de que ambos os serviços estejam em execução para garantir o funcionamento adequado da aplicação.
+```bash
+npm start
+```
+```bash
+node index.js
+```
+- **MySQL**
+> Contas
+- **Front-End**
+>Front -> src -> App.css <br> App.js <br> EditarTarefa <br> GerenciamentoTarefas
+><br> ListaTarefas
+- **Back-End**
+>back -> index.js <br> tarefas.js
 
-> Docusaurus is built in a way so that it can [get running](https://docusaurus.io/docs/installation) in as little time as possible. We've built Docusaurus to handle the website build process so you can focus on your project.
-
-- **Localizable**
-
-> Docusaurus ships with [localization support](https://docusaurus.io/docs/i18n/introduction) via CrowdIn. Empower and grow your international community by translating your documentation.
-
-- **Customizable**
-
-> While Docusaurus ships with the key pages and sections you need to get started, including a home page, a docs section, a [blog](https://docusaurus.io/docs/blog), and additional support pages, it is also [customizable](https://docusaurus.io/docs/creating-pages) as well to ensure you have a site that is [uniquely yours](https://docusaurus.io/docs/styling-layout).
-
-## Installation
-
-Use the initialization CLI to create your site:
+## Instalação
+Utilizei o Visual Studio Code para a instalação de todas as extensões necessárias, o que otimizou tanto o desenvolvimento do back-end quanto do front-end. Essas extensões foram selecionadas para melhorar a eficiência e a produtividade durante o desenvolvimento do projeto:
 
 ```bash
-npm init docusaurus@latest
+npm install express
+npm install cors
+npm install mysql2
+npm install mysql
+npm install bcrypt
+npm install formik
+npm install yup
+npm install axios
+npm install react
 ```
 
-[Read the docs](https://docusaurus.io/docs/installation) for any further information.
-
-## Contributing
-
-We've released Docusaurus because it helps us better scale and supports the many OSS projects at Facebook. We hope that other organizations can benefit from the project. We are thankful for any contributions from the community.
-
-### [Code of Conduct](https://code.fb.com/codeofconduct)
-
-Facebook has adopted a Code of Conduct that we expect project participants to adhere to. Please read [the full text](https://code.fb.com/codeofconduct) so that you can understand what actions will and will not be tolerated.
-
-### Contributing guide
-
-Read our [contributing guide](https://github.com/facebook/docusaurus/blob/main/CONTRIBUTING.md) to learn about our development process, how to propose bugfixes and improvements, and how to build and test your changes to Docusaurus.
-
-### Beginner-friendly bugs
-
-To help you get your feet wet and get you familiar with our contribution process, we have a list of [beginner-friendly bugs](https://github.com/facebook/docusaurus/labels/good%20first%20issue) that might contain smaller issues to tackle first. This is a great place to get started.
-
-## Contact
-
-We have a few channels for contact:
-
-- [Discord](https://discord.gg/docusaurus):
-  - `#general` for those using Docusaurus.
-  - `#contributors` for those wanting to contribute to the Docusaurus core.
-- [@docusaurus](https://twitter.com/docusaurus) on Twitter
-- [GitHub Issues](https://github.com/facebook/docusaurus/issues)
-
-## Contributors
-
-This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)]. <a href="https://github.com/facebook/docusaurus/graphs/contributors"><img src="https://opencollective.com/Docusaurus/contributors.svg?width=890&button=false" /></a>
-
-## Backers
-
-Thank you to all our backers! 🙏 [Become a backer](https://opencollective.com/Docusaurus#backer)
-
-<a href="https://opencollective.com/Docusaurus#backers" target="_blank"><img src="https://opencollective.com/Docusaurus/backers.svg?width=890"></a>
-
-## Sponsors
-
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [Become a sponsor](https://opencollective.com/Docusaurus#sponsor)
-
-<a href="https://opencollective.com/Docusaurus/sponsor/0/website" target="_blank"><img src="https://opencollective.com/Docusaurus/sponsor/0/avatar.svg"></a> <a href="https://opencollective.com/Docusaurus/sponsor/1/website" target="_blank"><img src="https://opencollective.com/Docusaurus/sponsor/1/avatar.svg"></a>
-
-## License
-
-Docusaurus is [MIT licensed](./LICENSE).
-
-The Docusaurus documentation (e.g., `.md` files in the `/docs` folder) is [Creative Commons licensed](./LICENSE-docs).
-
-## Special thanks
-
-<p>
-  <a href="http://www.browserstack.com/" target="_blank">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./admin/img/browserstack-dark-mode-logo.svg#gh-dark-mode-only">
-      <img alt="BrowserStack logo" src="./admin/img/browserstack-light-mode-logo.svg#gh-light-mode-only" height="50px" />
-    </picture>
+## Aplicação
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=css,html,js,vscode,github,mysql,react,nodejs"/>
   </a>
 </p>
 
-[BrowserStack](http://www.browserstack.com/) supports us with [free access for open source](https://www.browserstack.com/open-source).
+## Detalhamento do Site
+### Login
+- Uma parte essencial do sistema é a autenticação, que exige a inserção obrigatória de um endereço de e-mail e uma senha. A senha deve ter, no mínimo, 8 caracteres; caso contrário, o sistema não aceitará o login. As credenciais fornecidas são validadas com os dados armazenados no banco de dados durante o processo de cadastro. Por questões de segurança, as senhas são criptografadas no banco de dados. No código-fonte, o processo de criptografia é gerenciado pela biblioteca Bcrypt, que garante que as senhas sejam armazenadas de forma segura e não possam ser acessadas diretamente. Essa abordagem protege as credenciais dos usuários contra possíveis comprometimentos.
+### Cadastro
+- Em uma seção ao lado da página de login, há um formulário de cadastro composto por três campos de texto: um para o e-mail e dois para a senha. As duas caixas de senha devem conter o mesmo valor para garantir a consistência e evitar erros de autenticação. Após o preenchimento e validação, essas informações são salvas e armazenadas no banco de dados, assegurando que cada login tenha uma base de gerenciamento individualizada.
+### Gerenciamento de Tarefas
+- O formulário de gerenciamento de tarefas possui duas caixas de texto: uma para o título da tarefa e outra para a descrição, permitindo que o usuário insira as informações necessárias conforme desejar. Além dessas caixas de texto, há dois botões: **Salvar** Para registrar a tarefa na lista;**Trocar Tabelas** Para alternar entre as tabelas de tarefas pendentes e tarefas concluídas.
+### Lista de Tarefas
+- Na interface de gerenciamento de tarefas, a lista de tarefas pendentes incluirá três botões para cada tarefa:
+<br> **Concluir**: Move a tarefa para a lista de tarefas concluídas e registra a data de conclusão.
+<br>**Editar**: Permite alterar a descrição da tarefa.
+<br>**Excluir**: Remove a tarefa da lista de tarefas pendentes.<br>
+- Já a lista de tarefas concluídas terá apenas dois botões para cada tarefa:
+<br>**Editar**: Permite modificar a descrição da tarefa mesmo após sua conclusão.
+<br>**Excluir**: Remove a tarefa da lista de tarefas concluídas.
+<br>Essa estrutura diferencia as funcionalidades disponíveis para tarefas pendentes e concluídas, facilitando o gerenciamento e a organização das suas atividades. 
 
-[![Rocket Validator logo](./admin/img/rocketvalidator-logo.png)](https://rocketvalidator.com/)
-
-[Rocket Validator](https://rocketvalidator.com/) helps us find HTML markup or accessibility issues.
+## Contato
+meinhas contas para entrar em contato:
+- [Whatsapp](https://wa.me/61994656215)
+- [Discord](https://discord.com/invite/cachoro9929)
+- [Linkedin](https://www.linkedin.com/in/emanuel-davi-500995191/)
+- [GitHub](https://github.com/emanuel672)

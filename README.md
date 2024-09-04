@@ -79,8 +79,9 @@ npm install react
 <br>Essa estrutura diferencia as funcionalidades disponíveis para tarefas pendentes e concluídas, facilitando o gerenciamento e a organização das suas atividades. 
 
 ## Contato
-meinhas contas para entrar em contato:
+minhas contas para entrar em contato:
 - [Whatsapp](https://wa.me/61994656215)
 - [Discord](https://discord.com/invite/cachoro9929)
 - [Linkedin](https://www.linkedin.com/in/emanuel-davi-500995191/)
 - [GitHub](https://github.com/emanuel672)
+Emanuel Davi da Silva Soares

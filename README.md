@@ -1,6 +1,6 @@
 <div align="center">
   <h1 align="center">
-    Docusaurus
+    Cadastro e Login
     <br />
     <br />
     <a href="https://docusaurus.io">

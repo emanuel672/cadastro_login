@@ -84,4 +84,4 @@ minhas contas para entrar em contato:
 - [Discord](https://discord.com/invite/cachoro9929)
 - [Linkedin](https://www.linkedin.com/in/emanuel-davi-500995191/)
 - [GitHub](https://github.com/emanuel672)
-Emanuel Davi da Silva Soares
+<h1 align="lester">Emanuel Davi da Silva Soares</h1>

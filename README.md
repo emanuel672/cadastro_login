@@ -80,6 +80,8 @@ npm install react
 
 ## Contato
 minhas contas para entrar em contato:
+- [site](https://cadastro-login-sable.vercel.app/)
+- o site esta sem funcionalidades por conta das extensoes que github não sobe e como foi um especificação pedida na mensagem não deu para completar
 - [Whatsapp](https://wa.me/61994656215)
 - [Discord](https://discord.com/invite/cachoro9929)
 - [Linkedin](https://www.linkedin.com/in/emanuel-davi-500995191/)

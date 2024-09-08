@@ -23,7 +23,7 @@ Para o desenvolvimento do projeto, utilizei React para o front-end e Node.js par
 
 **Dica**: Para iniciar o projeto em seu computador, abra o arquivo app.js no terminal (cmd) e execute o comando npm start, o index.js no backe-end node index.js. Isso iniciará a aplicação e permitirá que você comece a utilizá-la. Com isso, você poderá acessar a aplicação em seu navegador, utilizando o frontend na porta 3000 e o backend na porta 3001.
 
-## Exlpicação para a instalção
+## Explicação para a instalação
 Baixe os arquivos do backend e do frontend, bem como as extensões listadas na área de "Instalação". Para sua conveniência, incluí um arquivo zip contendo os diretórios node_modules para ambos os projetos (frontend e backend). No entanto, para evitar possíveis erros, é aconselhável instalar as dependências via linha de comando. Para iniciar o servidor backend, execute o comando no diretório correspondente para abrir a porta 3001, Em seguida, inicie o servidor frontend com o comando os comandos de Start estao listados no "Start do documento".
  
 - **Start do documento**

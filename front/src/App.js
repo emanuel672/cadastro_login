@@ -10,7 +10,7 @@ function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const handleSubmit = (endpoint, values, callback) => {
-    Axios.post(`https://cadastro-login-sable.vercel.app/${endpoint}`, values)
+    Axios.post(`http://localhost:3001/${endpoint}`, values)
       .then(response => {
         alert(response.data.msg);
         if (response.data.userId) {
